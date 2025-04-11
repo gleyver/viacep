@@ -127,6 +127,11 @@ backend
 - **Testes**: Cobertura com testes unitários e de integração usando `PHPUnit`.
 
 ## 🚀 Como Rodar o Projeto
+```bash
+git clone https://github.com/gleyver/viacep.git
+cd viacep
+```
+
 
 ### 📦 Backend (Laravel)
 
