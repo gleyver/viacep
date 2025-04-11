@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+  <div class="min-h-screen bg-gradient-to-br flex items-center justify-center">
     <div class="w-full max-w-2xl mx-auto p-4">
       <div class="relative">
         <!-- Card de fundo com rotação -->

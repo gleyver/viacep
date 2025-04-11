@@ -147,9 +147,16 @@ cp .env.example .env
 # Gerar chave da aplicação
 php artisan key:generate
 
+touch database/database.sqlite
+
+php artisan migrate
+
 # Rodar servidor local
 php artisan serve
 ```
+
+Após isso você já consegue acessar o swagger e testa o back-end
+http://127.0.0.1:8000/api/documentation
 
 ### 🔍 Rodar Testes Backend
 
@@ -169,6 +176,7 @@ npm install
 # Rodar ambiente de desenvolvimento
 npm run dev
 ```
+###Obs: O front está integrado com o back-end, então para a API no front funcionar será necessário rodar o back-end
 
 ## ✅ Funcionalidades
 
@@ -182,7 +190,6 @@ npm run dev
 
 - **Home Page**: Descrição breve, imagem e botão para navegação.
 - **Pesquisa de CEP**:
-  - Input com máscara para CEP (`#####-###`)
   - Resultado de endereço formatado com dados da API.
   - Botão de retorno à Home.
 - Estado gerenciado via **Vuex**.
