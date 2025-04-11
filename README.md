@@ -1,4 +1,4 @@
-# 🚀 Teste Técnico — Vaga Staff Engineer (Laravel + Vue.js)
+# 🚀 Teste Técnico
 
 Este repositório contém a solução para o desafio técnico, composto por uma API desenvolvida em **Laravel** e uma interface **SPA em Vue.js**, com integração para consulta de CEP via [ViaCEP](https://viacep.com.br/).
 
@@ -127,6 +127,11 @@ backend
 - **Testes**: Cobertura com testes unitários e de integração usando `PHPUnit`.
 
 ## 🚀 Como Rodar o Projeto
+```bash
+git clone https://github.com/gleyver/viacep.git
+cd viacep
+```
+
 
 ### 📦 Backend (Laravel)
 
