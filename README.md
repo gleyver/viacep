@@ -176,6 +176,7 @@ npm install
 # Rodar ambiente de desenvolvimento
 npm run dev
 ```
+Para acessar o front http://localhost:5173/
 ###Obs: O front está integrado com o back-end, então para a API no front funcionar será necessário rodar o back-end
 
 ## ✅ Funcionalidades
