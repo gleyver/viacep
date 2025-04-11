@@ -227,4 +227,4 @@ npm run dev
 
 ## 📬 Contato
 
-Para mais informações, entre em contato comigo via https://www.linkedin.com/in/gleyver/ ou gleyvercoutinho@gmail.com.
+Para mais informações, entre em contato comigo via https://www.linkedin.com/in/gleyver/ ou gleyvercoutinho@gmail.com
