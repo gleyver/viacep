@@ -136,7 +136,7 @@ cd viacep
 ### 📦 Backend (Laravel)
 
 ```bash
-cd backend-laravel
+cd backend
 
 # Instalar dependências
 composer install
@@ -161,7 +161,7 @@ php artisan test
 ### 🌐 Frontend (Vue.js)
 
 ```bash
-cd frontend-vue
+cd frontend
 
 # Instalar dependências
 npm install
