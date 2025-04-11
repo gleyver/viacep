@@ -71,13 +71,7 @@ backend
 │       └── UseCases/
 │           └── BuscarCepTest.php
 │
-├── .env
-├── .phpunit.result.cache
-├── .phpstan.neon                                # Static analysis (opcional)
-├── .psalm.xml                                   # Static analysis (opcional)
-├── .github/
-│   └── workflows/
-│       └── ci.yml                               # GitHub Actions para rodar tests/linters
+├── .env                          # GitHub Actions para rodar tests/linters
 ├── composer.json
 ├── phpunit.xml
 └── README.md

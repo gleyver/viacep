@@ -20,8 +20,12 @@
                   <input
                     v-model="cep"
                     type="text"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
                     placeholder="Digite o CEP"
+                    maxlength="9"
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                    @input="handleInput"
                     @keyup.enter="searchCep"
                   />
                   <div class="absolute inset-y-0 right-0 flex items-center pr-3">
@@ -70,6 +74,23 @@ const cep = ref('');
 const address = computed(() => store.state.address);
 const error = computed(() => store.state.error);
 const loading = computed(() => store.state.loading);
+
+const formatCep = (value: string) => {
+  // Remove tudo que não é número
+  const numbers = value.replace(/\D/g, '');
+  
+  // Aplica a máscara
+  if (numbers.length <= 5) {
+    return numbers;
+  }
+  return `${numbers.slice(0, 5)}-${numbers.slice(5, 8)}`;
+};
+
+const handleInput = (event: Event) => {
+  const input = event.target as HTMLInputElement;
+  const formattedValue = formatCep(input.value);
+  cep.value = formattedValue;
+};
 
 const searchCep = () => {
   if (cep.value) {

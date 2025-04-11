@@ -29,7 +29,7 @@ const store = createStore({
     async searchCep({ commit }, cep) {
       commit('setLoading', true)
       try {
-        const response = await fetch(`http://localhost:8000/api/v1/cep/${cep}`)
+        const response = await fetch(`http://localhost:8000/api/v1/cep/${cep.replace(/\D/g, '')}`)
         const data = await response.json()
         if (response.ok) {
           commit('setAddress', data)

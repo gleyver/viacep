@@ -45,7 +45,7 @@ export default createStore({
     async searchCep({ commit }, cep: string) {
       commit('setLoading', true);
       try {
-        const response = await axios.get(`http://localhost:8000/api/v1/cep/${cep}`);
+        const response = await axios.get(`http://localhost:8000/api/v1/cep/${cep.replace(/\D/g, '')}`);
         commit('setAddress', response.data);
       } catch (error: any) {
         commit('setError', error.response?.data?.error || 'Erro ao buscar CEP');
